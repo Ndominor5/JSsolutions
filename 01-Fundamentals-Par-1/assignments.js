@@ -9,7 +9,6 @@
 // console.log(continent);
 // console.log(population);
 
-
 //////////////////////////
 // Data types.
 
@@ -26,7 +25,6 @@
 
 // language = "Spanish";
 
-
 ///////////////////////////
 // Basic operators
 // let halfOfPopulation = population / 2;
@@ -41,8 +39,20 @@
 
 /////////////////////////////
 // String and Template Literals
-const description = `Portugal is in Europe,
-and its 11 million
-people speak portuguese`;
 
-console.log(description);
+// const description = `Portugal is in Europe,
+// and its 11 million
+// people speak portuguese`;
+
+// console.log(description);
+
+//////////////////////////////
+// Taking Decisions: if/else Statements
+
+const MexicoPopulation = 12000000;
+
+if (MexicoPopulation >= 33000000) {
+  console.log(`Mexico's population is above average.`);
+} else {
+  console.log(`Mexico's population is below average.`);
+}

@@ -30,7 +30,6 @@ console.log(40 + 8 + 23 - 10);*/
 ///////////////////////////////
 // let, const and var
 
-
 ///////////////////////////////
 // Basic Operators
 
@@ -79,26 +78,47 @@ console.log(40 + 8 + 23 - 10);*/
 ////////////////////////////
 // Strings and Template Literals
 
-const firstName = 'Jonas';
-const job = 'teacher';
-const birthYear = 1991;
-const year = 2037;
+// const firstName = 'Jonas';
+// const job = 'teacher';
+// const birthYear = 1991;
+// const year = 2037;
 
-const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+// const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
 
-console.log(jonas);
+// console.log(jonas);
 
 // Template literals
-const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
-console.log(jonasNew);
+// const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+// console.log(jonasNew);
 
-console.log(`Template literals can be use for any strings.`);
+// console.log(`Template literals can be use for any strings.`);
 
-// Multi lines
-console.log('String with \n\
-multiple \n\
-lines');
+// // Multi lines
+// console.log('String with \n\
+// multiple \n\
+// lines');
 
-console.log(`String with
-multiple
-lines.`);
+// console.log(`String with
+// multiple
+// lines.`);
+
+/////////////////////////
+// Taking decisions: if/else statements
+const age = 15;
+
+if (age > 18) {
+  console.log(`Sarah can start driving license 🚗`);
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too young. Wait another ${yearsLeft} years.`);
+}
+
+const birthYear = 2012;
+let century;
+
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
