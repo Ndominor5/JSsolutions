@@ -49,10 +49,18 @@
 //////////////////////////////
 // Taking Decisions: if/else Statements
 
-const MexicoPopulation = 12000000;
+// const MexicoPopulation = 12000000;
 
-if (MexicoPopulation >= 33000000) {
-  console.log(`Mexico's population is above average.`);
-} else {
-  console.log(`Mexico's population is below average.`);
-}
+// if (MexicoPopulation >= 33000000) {
+//   console.log(`Mexico's population is above average.`);
+// } else {
+//   console.log(`Mexico's population is below average.`);
+// }
+
+//////////////////////////////
+// Type Conversion and Coercion
+console.log('9' - '5'); // 4
+console.log('19' - '13' + '17'); // 617
+console.log('19' - '13' + 17); // 23
+console.log('123' < 57); // true
+console.log(5 + 6 + '4' + 9 - 4 - 2); //114 1149 1145 1143
