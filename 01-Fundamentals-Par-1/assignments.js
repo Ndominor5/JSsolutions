@@ -59,8 +59,20 @@
 
 //////////////////////////////
 // Type Conversion and Coercion
-console.log('9' - '5'); // 4
-console.log('19' - '13' + '17'); // 617
-console.log('19' - '13' + 17); // 23
-console.log('123' < 57); // true
-console.log(5 + 6 + '4' + 9 - 4 - 2); //114 1149 1145 1143
+// console.log('9' - '5'); // 4
+// console.log('19' - '13' + '17'); // 617
+// console.log('19' - '13' + 17); // 23
+// console.log('123' < 57); // true
+// console.log(5 + 6 + '4' + 9 - 4 - 2); //114 1149 1145 1143
+
+///////////////////////////////
+// Equality Operators: === vs. ==
+// let numNeighbours = Number(prompt(`How many neighbour countries does your country have?`));
+
+// if (numNeighbours === 1) { // When code is run with the strict equiality operator and the prompt is not converted to number the equality operator takes the value 1 as a string which is defined by default when the user enters the value.
+//     console.log(`Only 1 border!`);
+// } else if(numNeighbours > 1) {
+//     console.log(`Mora than 1 border!`);
+// } else {
+//     console.log(`No borders!`);
+// };
