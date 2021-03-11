@@ -179,21 +179,110 @@ console.log(40 + 8 + 23 - 10);*/
 /////////////////////////////
 // Equality Operators: == vs. ===
 
-const age = '18';
-if(age === 18) console.log(`You just became and adult. (strict)`);
+// const age = '18';
+// if(age === 18) console.log(`You just became and adult. (strict)`);
 
-if(age == 18) console.log(`You just became and adult. (loose)`);
+// if(age == 18) console.log(`You just became and adult. (loose)`);
 
-const favorite = Number(prompt(`What's your favorite number?`));
-console.log(favorite);
-console.log(typeof favorite);
+// const favorite = Number(prompt(`What's your favorite number?`));
+// console.log(favorite);
+// console.log(typeof favorite);
 
-if(favorite === 23){ //23 === 23
-  console.log(`Cool! 23 is an amazing number!`);
-} else if (favorite === 7) {
-  console.log(`7 is also a cool number`);
-} else {
-  console.log(`Number is not 23 or 7`);
-};
+// if(favorite === 23){ //23 === 23
+//   console.log(`Cool! 23 is an amazing number!`);
+// } else if (favorite === 7) {
+//   console.log(`7 is also a cool number`);
+// } else {
+//   console.log(`Number is not 23 or 7`);
+// };
 
-if ( favorite !== 23) console.log(`Why not 23?`);
+// if ( favorite !== 23) console.log(`Why not 23?`);
+
+//////////////////////////////
+// Boolean Logic and Logical Operators
+
+// const hasDriversLicense = true;
+// const hasGoodVision = true;
+
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision){
+//   console.log(`Sarah is able to drive!`);
+// } else {
+//   console.log(`Someone else should drive...`);
+// };
+
+// const isTired = false;
+// console.log(hasDriversLicense && hasGoodVision && isTired);
+
+// if (hasDriversLicense && hasGoodVision && !isTired){
+//   console.log(`Sarah is able to drive!`);
+// } else {
+//   console.log(`Someone else should drive...`);
+// };
+
+////////////////////////////
+// The switch Statement
+
+// const day = 'satuday';
+
+// switch(day) {
+//   case 'monday': // day === 'monday'
+//     console.log(`Plan course structure`);
+//     console.log(`Go to coding meetup`);
+//     break;
+//   case 'tuesday':
+//     console.log(`Prepare theory videos`);
+//     break;
+//   case 'wednesday':
+//   case 'thursday':
+//     console.log(`Write code examples`);
+//     break;
+//   case 'friday':
+//     console.log(`Record videos`);
+//     break;
+//   case 'saturday':
+//   case 'sunday':
+//     console.log(`I enjoy the weekend :D`);
+//     break;
+//     default:
+//     console.log(`Not a valid day!`);
+// };
+
+// Comparing the Switch Statement vs the if/else
+
+// if(day === 'monday'){
+//   console.log(`Plan course structure`);
+//   console.log(`Go to coding meetup`);
+// } else if(day === 'tuesday'){
+//   console.log(`Prepare theory videos`);
+// } else if(day === 'wednesday' || day === 'thursday'){
+//   console.log(`Write code examples`);
+// } else if (day === 'friday'){
+//   console.log(`Record videos`);
+// } else if ( day === 'saturday' || day === 'sunday'){
+//   console.log(`I enjoy the weekend :D`);
+// } else {
+//   console.log(`Not a valid day!`);
+// };
+
+//////////////////////////
+// Statements and Expressions
+
+// 3 + 4 // this is a expression
+// 1991 // this is a expression
+// true && false && !false // this is a expression
+
+// if (23 > 10) { // this is a statement
+//   const str = '23 is bigger';
+// };
+
+// console.log(`I'm ${2037 - 1991} years old ${if (23 > 10) {
+//   const str = '23 is bigger';
+// };}`);  // we are inserting a statement to probe that template literals do not accept statements.
+
+///////////////////////////////
+// The Conditional (Ternary) Operator
+
