@@ -128,3 +128,13 @@
 //////////////////////////////
 // Statements and Expressions
 
+/////////////////////////////
+// The Conditional (Ternary) Operator
+const country = prompt(`Enter your country:`);
+const countryPopulation = Number(prompt(`Enter the population of your country:`));
+
+countryPopulation > 33 ? console.log(`${country}'s population is above average`) : console.log(`${country}'s population is below average`);
+
+console.log(
+    `${country}'s population is ${countryPopulation > 33 ? 'above' : 'below'} average`,
+);
