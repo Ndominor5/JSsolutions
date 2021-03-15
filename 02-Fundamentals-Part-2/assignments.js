@@ -99,16 +99,19 @@
 /////////////////////////
 // Basic Array Operations
 
-const neighbours = ['usa', 'guatemala', 'el salvador', 'belize'];
-neighbours.push('utophia');
-console.log(neighbours);
+// const neighbours = ['usa', 'guatemala', 'el salvador', 'belize'];
+// neighbours.push('utophia');
+// console.log(neighbours);
 
-neighbours.pop();
-console.log(neighbours);
+// neighbours.pop();
+// console.log(neighbours);
 
-if(neighbours.includes('argentina') === false){
-  console.log(`Probably not a north american country`);
-}
+// if(neighbours.includes('argentina') === false){
+//   console.log(`Probably not a north american country`);
+// }
 
-neighbours[2] = 'republica de el salvador';
-console.log(neighbours);
+// neighbours[2] = 'republica de el salvador';
+// console.log(neighbours);
+
+//////////////////////
+// Intro to Objects
