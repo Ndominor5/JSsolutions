@@ -79,19 +79,36 @@
 //////////////////////////
 // Introduction to Arrays
 
-const populations = [1441, 127, 337, 6];
-console.log(populations.length === 4); // his
-if (populations.length === 4) console.log(true); // mine
+// const populations = [1441, 127, 337, 6];
+// console.log(populations.length === 4); // his
+// if (populations.length === 4) console.log(true); // mine
 
-function percentageOfWorld(countryPopu) {
-  return ((countryPopu / 7900) * 100).toFixed(2);
+// function percentageOfWorld(countryPopu) {
+//   return ((countryPopu / 7900) * 100).toFixed(2);
+// }
+
+// const percentages = [
+//   percentageOfWorld(populations[0]),
+//   percentageOfWorld(populations[1]),
+//   percentageOfWorld(populations[2]),
+//   percentageOfWorld(populations[3]),
+// ];
+
+// console.log(percentages);
+
+/////////////////////////
+// Basic Array Operations
+
+const neighbours = ['usa', 'guatemala', 'el salvador', 'belize'];
+neighbours.push('utophia');
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if(neighbours.includes('argentina') === false){
+  console.log(`Probably not a north american country`);
 }
 
-const percentages = [
-  percentageOfWorld(populations[0]),
-  percentageOfWorld(populations[1]),
-  percentageOfWorld(populations[2]),
-  percentageOfWorld(populations[3]),
-];
-
-console.log(percentages);
+neighbours[2] = 'republica de el salvador';
+console.log(neighbours);
