@@ -99,16 +99,41 @@
 /////////////////////////
 // Basic Array Operations
 
-const neighbours = ['usa', 'guatemala', 'el salvador', 'belize'];
-neighbours.push('utophia');
-console.log(neighbours);
+// const neighbours = ['usa', 'guatemala', 'el salvador', 'belize'];
+// neighbours.push('utophia');
+// console.log(neighbours);
 
-neighbours.pop();
-console.log(neighbours);
+// neighbours.pop();
+// console.log(neighbours);
 
-if(neighbours.includes('argentina') === false){
-  console.log(`Probably not a north american country`);
+// if(neighbours.includes('argentina') === false){
+//   console.log(`Probably not a north american country`);
+// }
+
+// neighbours[2] = 'republica de el salvador';
+// console.log(neighbours);
+
+//////////////////////
+// Intro to Objects
+
+const myCountry = {
+  'country': 'Mexico',
+  'capital': 'Mexico City',
+  'language': 'Spanish',
+  'population': 27,
+  'neighbours': ['Edo Mex', 'Morelos', 'Puebla',]
 }
 
-neighbours[2] = 'republica de el salvador';
-console.log(neighbours);
+console.log(myCountry.capital);
+console.log(myCountry["neighbours"]);
+
+//////////////////////
+// Dot vs. Bracket Notation
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring states and the capital is called ${myCountry.capital}.`);
+
+console.log(myCountry.population += 2);
+console.log(myCountry['population'] -=2);
+
+//////////////////////
+// Object Methods

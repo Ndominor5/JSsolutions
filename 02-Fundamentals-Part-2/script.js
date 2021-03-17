@@ -163,25 +163,29 @@
 // Basic Array Operations (Methods)
 
 // Add elements
-const friends = ["Michael", "Steven", "Peter"];
-const newLength = friends.push("Jay");
-console.log(friends);
-console.log(newLength);
+// const friends = ["Michael", "Steven", "Peter"];
+// const newLength = friends.push("Jay");
+// console.log(friends);
+// console.log(newLength);
 
-friends.unshift("John");
-console.log(friends);
+// friends.unshift("John");
+// console.log(friends);
 
-// Remove elements
-friends.pop();
-const pop = friends.pop();
-console.log(pop);
-console.log(friends);
+// // Remove elements
+// friends.pop();
+// const pop = friends.pop();
+// console.log(pop);
+// console.log(friends);
 
-friends.shift();
-console.log(friends);
+// friends.shift();
+// console.log(friends);
 
-console.log(friends.indexOf("Steven"));
-console.log(friends.indexOf("Bob"));
+// console.log(friends.indexOf("Steven"));
+// console.log(friends.indexOf("Bob"));
 
-console.log(friends.includes("Steven"));
-console.log(friends.includes("Bob"));
+// console.log(friends.includes("Steven"));
+// console.log(friends.includes("Bob"));
+
+//////////////////////
+// Object Methods
+
