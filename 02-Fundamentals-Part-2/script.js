@@ -159,7 +159,7 @@
 // ];
 // console.log(ages);
 
-/////////////////////
+//////////////////////
 // Basic Array Operations (Methods)
 
 // Add elements
@@ -187,5 +187,56 @@
 // console.log(friends.includes("Bob"));
 
 //////////////////////
-// Object Methods
+// Intro to Objects
 
+// const jonas = {
+//   firstName: "Jonas",
+//   lastName: 'Schmedtmann',
+//   age = 2037 - 1991,
+//   job = 'teacher',
+//   friends : ['Michael', 'Peter', 'Steven']
+// };
+
+//////////////////////
+// Dot vs. Bracket notation
+
+// const jonas = {
+//   firstName: "Jonas",
+//   lastName: "Schmedtmann",
+//   age: 2037 - 1991,
+//   job: "teacher",
+//   friends: ["Michael", "Peter", "Steven"],
+// };
+// console.log(jonas);
+
+// console.log(jonas.lastName);
+// console.log(jonas["lastName"]);
+
+// const nameKey = "Name";
+// console.log(jonas["first" + nameKey]);
+// console.log(jonas["last" + nameKey]);
+
+// const interestedIn = prompt(
+//   "What do you want to know about Jonas? choose between firstName, lastName, age, job, and friends"
+// );
+
+// if (jonas[interestedIn]) {
+//   console.log(jonas[interestedIn]);
+// } else {
+//   console.log(
+//     `Wrong request! choose between firstName, lastName, age, job, and friends`
+//   );
+// }
+
+// jonas.location = "Portugal";
+// jonas["twitter"] = "@jonasshmedtman";
+// console.log(jonas);
+
+// // Challenge
+// // Jonas has 3 friends, and his best friend is Michael. From object Jona, 3, and Michael.
+// console.log(
+//   `${jonas.firstName} has ${jonas.friends.length}, and his best friend is ${jonas.friends[0]}.`
+// );
+
+//////////////////////
+// Object Methods
