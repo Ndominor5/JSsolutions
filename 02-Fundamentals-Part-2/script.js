@@ -240,3 +240,38 @@
 
 //////////////////////
 // Object Methods
+
+const jonas = {
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  birthYear: 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: true,
+
+// Adding a function as a key-value pair.
+//   calcAge: function(birthYear) {
+//     return 2037 - birthYear;
+//   }
+
+// Using the this variable.
+//   calcAge: function() {
+//     console.log(this);
+//     return 2037 - this.birthYear;
+//   }
+
+// Storing the age value in the Jonas object and we can retrieve it as a property from the object.
+  calcAge: function() {
+    this.age = 2037 - this.birthYear
+    return this.age;
+  }
+};
+
+console.log(jonas.calcAge());
+// console.log(jonas['calcAge'](1991));
+
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
+
+// Challenge for this video.
