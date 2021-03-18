@@ -117,12 +117,16 @@
 // Intro to Objects
 
 const myCountry = {
-  'country': 'Mexico',
-  'capital': 'Mexico City',
-  'language': 'Spanish',
-  'population': 27,
-  'neighbours': ['Edo Mex', 'Morelos', 'Puebla',]
-}
+  country: "Mexico",
+  capital: "Mexico City",
+  language: "Spanish",
+  population: 27,
+  neighbours: ["Edo Mex", "Morelos", "Puebla"],
+  isIsland: false,
+  describe: function () {
+    return `${myCountry.country}`;
+  },
+};
 
 console.log(myCountry.capital);
 console.log(myCountry["neighbours"]);
@@ -130,10 +134,13 @@ console.log(myCountry["neighbours"]);
 //////////////////////
 // Dot vs. Bracket Notation
 
-console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring states and the capital is called ${myCountry.capital}.`);
+console.log(
+  `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring states and the capital is called ${myCountry.capital}.`
+);
 
-console.log(myCountry.population += 2);
-console.log(myCountry['population'] -=2);
+console.log((myCountry.population += 2));
+console.log((myCountry["population"] -= 2));
 
 //////////////////////
 // Object Methods
+console.log(myCountry.describe());
