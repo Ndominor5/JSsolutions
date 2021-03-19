@@ -241,55 +241,55 @@
 //////////////////////
 // Object Methods
 
-const jonas = {
-  firstName: "Jonas",
-  lastName: "Schmedtmann",
-  birthYear: 1991,
-  job: "teacher",
-  friends: ["Michael", "Peter", "Steven"],
-  hasDriversLicense: false,
+// const jonas = {
+//   firstName: "Jonas",
+//   lastName: "Schmedtmann",
+//   birthYear: 1991,
+//   job: "teacher",
+//   friends: ["Michael", "Peter", "Steven"],
+//   hasDriversLicense: false,
 
-  // Adding a function as a key-value pair.
-  //   calcAge: function(birthYear) {
-  //     return 2037 - birthYear;
-  //   }
+// Adding a function as a key-value pair.
+//   calcAge: function(birthYear) {
+//     return 2037 - birthYear;
+//   }
 
-  // Using the this variable.
-  //   calcAge: function() {
-  //     console.log(this);
-  //     return 2037 - this.birthYear;
-  //   }
+// Using the this variable.
+//   calcAge: function() {
+//     console.log(this);
+//     return 2037 - this.birthYear;
+//   }
 
-  // Storing the age value in the Jonas object and we can retrieve it as a property from the object.
-  calcAge: function () {
-    this.age = 2037 - this.birthYear;
-    return this.age;
-  },
+// Storing the age value in the Jonas object and we can retrieve it as a property from the object.
+// calcAge: function () {
+//   this.age = 2037 - this.birthYear;
+//   return this.age;
+// },
 
-  // Trying to get the license info
-  // driversLic: function () {
-  //   if (this.hasDriversLicense === true) {
-  //     this.license = "has";
-  //     return this.license;
-  //   } else {
-  //     this.license = "doesn't";
-  //     return this.license;
-  //   }
-  // },
+// Trying to get the license info
+// driversLic: function () {
+//   if (this.hasDriversLicense === true) {
+//     this.license = "has";
+//     return this.license;
+//   } else {
+//     this.license = "doesn't";
+//     return this.license;
+//   }
+// },
 
-  getSummary: function () {
-    return `${this.firstName} is a ${this.calcAge()}-years old ${
-      this.job
-    }, and he has ${this.hasDriversLicense ? "a" : "no"} drivers license.`;
-  },
-};
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calcAge()}-years old ${
+//       this.job
+//     }, and he has ${this.hasDriversLicense ? "a" : "no"} drivers license.`;
+//   },
+// };
 
-console.log(jonas.calcAge());
+// console.log(jonas.calcAge());
 // console.log(jonas['calcAge'](1991));
 
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
 
 // Challenge for this video.
 // Jonas is a 46-years old teacher, and he has/doesn't a drivers license.
@@ -297,4 +297,26 @@ console.log(jonas.age);
 //   `${jonas.firstName} is a ${jonas.age}-years old ${jonas.job}, and he ${jonas.driversLic} a drivers license.`
 // );
 
-console.log(jonas.getSummary());
+// console.log(jonas.getSummary());
+
+//////////////////////
+// For loop
+
+// for loop keeps running while condition is true.
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep} 🏋️`);
+// }
+
+//////////////////////
+// Looping arrays, breaking and continuing
+const jonas = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+
+for (let i = 0; i < 5; i++) {
+  console.log(jonas[i]);
+}
