@@ -80,13 +80,14 @@
 // Introduction to Arrays
 
 // const populations = [1441, 127, 337, 6];
-// console.log(populations.length === 4); // his
+//console.log(populations.length === 4); // his
 // if (populations.length === 4) console.log(true); // mine
 
 // function percentageOfWorld(countryPopu) {
 //   return ((countryPopu / 7900) * 100).toFixed(2);
 // }
 
+// console.log('--- Percentage Added Manually ---');
 // const percentages = [
 //   percentageOfWorld(populations[0]),
 //   percentageOfWorld(populations[1]),
@@ -159,3 +160,54 @@
 
 //////////////////////
 // Looping arrays, breaking and continuing
+
+const populations = [1441, 127, 337, 6];
+const percentages2 = [];
+
+function percentageOfWorld(countryPopu) {
+  return ((countryPopu / 7900) * 100).toFixed(2);
+}
+
+console.log('--- Percentage Added with a For Loop ---');
+for (let i = 0; i < populations.length; i++){
+    percentages2.push(percentageOfWorld(populations[i]));
+};
+
+console.log(percentages2);
+
+//////////////////////
+// Looping Backwards and Loops in Loops
+
+// const listOfNeighbours = [
+//     ['Canada', 'Mexico'],
+//     ['Spain'],
+//     ['Norway', 'Sweden', 'Russia']
+// ];
+
+// for (let i = 0; i < 3; i++) {
+//     //console.log(listOfNeighbours[i]);
+//     for (let x = 0; x < listOfNeighbours[i].length; x++ ) {
+//         if(listOfNeighbours[i].length > 1){
+//             console.log(`Neighbour: ${listOfNeighbours[i][x]}`);
+//         }
+//     }
+// }
+
+//////////////////////
+// The while loop
+
+//const populations = [1441, 127, 337, 6];
+const percentages3 = [];
+
+function percentageOfWorld(countryPopu) {
+  return ((countryPopu / 7900) * 100).toFixed(2);
+}
+
+console.log('--- Percentage Added with a While Loop ---');
+let i = 0;
+while (i < populations.length) {
+    percentages3.push(percentageOfWorld(populations[i]));
+    i++;
+};
+
+console.log(percentages3);
